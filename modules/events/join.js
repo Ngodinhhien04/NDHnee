@@ -14,7 +14,7 @@ module.exports.run = async function({ api, event }) {
 	const { threadID } = event;
 	if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
 		api.changeNickname(`[ ${global.config.PREFIX} ] • ${(!global.config.BOTNAME) ? "Made by CatalizCS and SpermLord" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
-		return api.sendMessage(`Ð𝗮̃ 𝗸𝗲̂́𝘁 𝗻𝗼̂́𝗶 𝘃𝗼̛́𝗶 𝗯𝗼𝘅 𝘁𝗵𝗮̀𝗻𝗵 𝗰𝗼̂𝗻𝗴 ! 𝗩𝘂𝗶 𝗹𝗼̀𝗻𝗴 𝘀𝘂̛̉ 𝗱𝘂̣𝗻𝗴 𝗹𝗲̣̂𝗻𝗵 -help  đ𝗲̂̉ 𝗯𝗶𝗲̂́𝘁 𝘁𝗼𝗮̀𝗻 𝗯𝗼̣̂ 𝗹𝗲̣̂𝗻𝗵 𝗰𝘂̉𝗮 𝗯𝗼𝘁\𝗻𝗖𝗮̉𝗺 𝗼𝗻 𝗯𝗮̣𝗻 𝗱𝗮̃ 𝗱𝘂̀𝗻𝗴 𝗯𝗼𝘁 𝗰𝘂̉𝗮 𝗡𝗴𝘂𝘆𝗲̂̃𝗻 𝗛𝗼𝗮̀𝗻𝗴 𝗔𝗻𝗵 𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹, 𝗰𝗵𝘂́𝗰 𝗰𝗮́𝗰 𝗯𝗮̣𝗻 𝘀𝘂̛̉ 𝗱𝘂̣𝗻𝗴 𝗯𝗼𝘁 𝘃𝘂𝗶 𝘃𝗲̉`, threadID);
+		return api.sendMessage(`đã kết nối với box thành công! Vui lòng sử dụng -help  để biết tất cả lệnh của bot \cảm ơn đã sỉ dụng bot của Ngô Đình Hiển , Chúc các bạn sử dụng bot vui vẻ`, threadID);
 	}
 	else {
 		try {
