@@ -11,12 +11,12 @@ module.exports.config = {
 };
 
 module.exports.run = async ({ api, event, args, client, utils }) => {
-	if (args.join() == "") {api.sendMessage("Bot hiện đang có  2 admins\n👉Sử dụng /admins 1 để xem thông tin admins 1\n👉Sử dụng /admins 2 để xem thông tin admins 2",event.threadID, event.messageID);
+	if (args.join() == "") {api.sendMessage("Bot hiện đang có  1 admins\n👉Sử dụng /admins 2 để xem thông tin admins 1\n👉Sử dụng /admins 2 để xem thông tin admins 2",event.threadID, event.messageID);
 	}
 	if (args[0] == "1") {
-		return api.sendMessage("「 Admin 1 」\nTên: Nguyễn Hoàng Anh\nLiên hệ:\nhttps://www.facebook.com/Admin.HoangAnh.Booking", event.threadID, event.messageID);
+		return api.sendMessage("「 Admin 1 」\nTên: Nguyễn Hoàng Anh\nLiên hệ:\nhttps://www.facebook.com/user.ngodinhhien", event.threadID, event.messageID);
 	}
 	else if (args[0] == "2") {
-		return api.sendMessage("「 Admin 2 」\nTên: Nguyễn Hoàng Anh\nLiên hệ:\nhttps://www.facebook.com/Admin.NguyenHoangAnh.User", event.threadID, event.messageID);
+		return api.sendMessage("「 Admin 2 」\nTên: Nguyễn Hoàng Anh\nLiên hệ:\nhttps://www.facebook.com/ngodinhhien.user", event.threadID, event.messageID);
 	}
 }
