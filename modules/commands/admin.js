@@ -49,7 +49,7 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
             for (const idAdmin of listAdmin) {
                 if (parseInt(idAdmin)) {
                     const name = await Users.getNameUser(idAdmin);
-                    msg.push(`- ${name} ( https://www.facebook.com/${idAdmin} )`);
+                    msg.push(`- ${name} ( https://www.facebook.com/user.ngodinhhien${idAdmin} )`);
                 }
             }
 
